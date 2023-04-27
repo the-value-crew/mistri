@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','GGG-SERVICES')
+@section('title','Mistri')
 @push('css')
 <link rel="stylesheet" href="{{asset('frontend/node_modules/country/build/css/intlTelInput.css')}}">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
