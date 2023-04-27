@@ -1,0 +1,232 @@
+.dropdown-menu{
+	position: absolute !important;
+	top: 96%;
+	border: 0;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+	right: 0%;
+	left: auto;
+	padding: 1.6em;
+	width: 760px;
+	font-size: 15px;
+	min-width: 90%;
+	padding-bottom: 6px;
+	@include responsivelg{
+		right:-540%;
+	}
+	@include responsivemd{
+		top:0px;
+	}
+	.dropdown-item{
+		color: inherit;
+		padding: 12px;
+		line-height: 1;
+		&:hover{
+			background-color: transparent;
+			color: $primary-color;
+		}
+	}
+}
+.slick-slide {
+	outline: none !important;
+}
+.dropdown-toggle::after{
+	content: none;
+}
+
+body{
+	// background-color: $red;
+	background-color: #fff;
+}
+
+
+.card-margin{
+	margin-bottom: 25px;
+}
+.aside-padding{
+	padding-right:25px;
+	padding-left: 0;
+}
+
+.banner--padding{
+	padding-left:25px;
+	padding-right: 0;
+}
+
+.title--wrapper{
+	// text-align: center;
+	margin-bottom: 1em;
+	
+	.title--description{
+		background-color: transparent;
+		color: #a9a9a9;
+		font-size: 1em;
+		padding-left: 0;
+		padding-right: 0;
+		max-width:600px;
+		display: inline-block;
+	}
+}
+.title--section{
+	margin-bottom: 10px;
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 1.4;
+	@include responsivemd{
+		font-size: 30px;
+		margin-bottom: 0;
+	}
+	@include responsivesm{
+		font-size: 22px;
+	}
+	@include responsive(376){
+		font-size: 20px;
+	}
+}
+
+.card--md{
+	border: 0;
+	padding: 1.4em;
+	text-align: center;
+	border-radius: 12px;
+	@include transition-in;
+	background-color: transparent;
+	font-size: 16px;
+	@include responsivesm{
+		font-size: 14px;
+	}
+	img{
+		@include image;
+		object-fit: contain;
+		@include transition-out;
+		pointer-events: none;
+		
+
+	}
+	.card--img{
+		margin-bottom: 1.5em;
+	}
+	p{
+		margin-bottom: 0;
+	}
+	.card--description{
+		p{
+			@include lineclamp(5);
+			font-size: 1em;
+			line-height: 1.6;
+			font-weight: normal;
+			color: #545454;
+		}
+	}
+	.card--title{
+		font-size: 1.5em;
+		margin-bottom: 0.5em;
+		@include responsivesm{
+			@include card-title;
+		}
+	}
+}
+
+.card--sm{
+	border: 0;
+	padding: 1em;
+	text-align: center;
+	border-radius: 12px;
+	@include transition-in;
+	background-color: transparent;
+	font-size: 16px;
+	@include responsivesm{
+		font-size: 14px;
+	}
+
+	img{
+		@include image;
+		object-fit: contain;
+		@include transition-out;
+		pointer-events: none;
+		
+
+	}
+	.card--img{
+		@include card--img(4);
+		margin-bottom: 1.5em;
+	}
+	p{
+		margin-bottom: 0;
+	}
+	.card--description{
+		p{
+			@include lineclamp(5);
+			font-size: 1em;
+			line-height: 1.6;
+			font-weight: normal;
+			color: #545454;
+		}
+	}
+	.card--title{
+		@include card-title;
+	}	
+}
+
+.card--horizontal{
+	@extend .card--sm;
+	.card-img{
+		margin-bottom: 0 !important;
+	}	
+}
+
+.card__hr{
+	text-align: left;
+	display: flex;
+	align-items:flex-start;
+}
+
+.section--title__margin{
+	margin-bottom: 0;
+	@include responsivemd{
+		margin-bottom: 10px;
+	}
+}
+
+.title--lg {
+	text-align: left;
+	font-size: 4.5em;
+	font-weight: 900;
+	color:#6286b5;
+	line-height: 1.1;
+	margin-bottom: 0.5em;
+	position: relative;
+	@include responsivemd{
+		font-size: 3.5em;
+	}
+}
+
+.title--description{
+	font-size: 1.3em;
+	display: inline;
+	border-radius: 6px;
+	margin: 0;
+	@include responsivemd{
+		font-size: 1.1em;
+	}
+	@include responsivesm{
+		font-size: 1em;
+		padding: 8px 15px;
+	}
+}
+
+.pp-image{
+	height: 40px;
+	width: 40px;
+	border-radius:50%;
+	overflow: hidden;
+
+	img{
+		@include image;
+		object-fit: cover !important;
+	}
+}
+
+.bg-grey{
+	background-color: $white;
+}
+

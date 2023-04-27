@@ -1,0 +1,108 @@
+// footer
+.footer{
+	background-color: $primary-color;
+	color: #f4f4f4;
+	@include responsivesm{
+		font-size: 14px;
+	}
+	.brand{
+		background-color: transparent;
+	}
+	.section-rule{
+		padding-bottom: 20px;
+	}
+	.col-lg-3{
+		margin-bottom: 1.5em;
+	}
+	a{
+		&:hover{
+			color: $secondary-color; 
+		}
+	}
+	.title--small{
+		@include card-title;
+		height: auto !important;
+		color: #fff;
+		font-weight: bold;
+		margin-bottom: 12px;
+	}
+	.download{
+		margin: auto;
+		ul{
+			@include ul;
+			display: flex;
+			flex-flow: row no-wrap;
+			img{
+				margin-right: 20px;
+				height: 50px;
+				width: auto
+			}
+		}
+		.wrapper{
+			margin-left: 50px;
+		}
+	}
+	h2.card--title{
+		margin-top: 12px;
+	}
+	ul{
+		@include ul;
+		li{
+			margin:8px 0;
+			.material-icons{
+				font-size: 20px;
+				margin-right: 8px;
+				vertical-align: middle;
+			}
+		}
+	}
+	.social{
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 22px;
+		margin-top: 1.3rem;
+		li{
+			margin:0 8px ;
+			
+		}
+		li:first-child{
+			margin-left: 0;
+		}
+		li:last-child{
+			margin-right: 0;
+		}
+		img{
+			height: 40px;
+			width: auto;
+			object-fit: contain;
+		}
+	}
+	hr{
+		display: block;
+		width: 100%;
+		border-color: rgba(0, 0, 0, 0.1);
+	}
+	.footer__last{
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+		p{
+			margin-bottom: 0;
+			@include responsivemd{
+				order:2;
+				margin-top: 15px;
+			}
+			a{
+				color: $secondary-color;
+			}
+		}
+		ul{
+			margin: 0 !important;
+		}
+		@include responsivemd{
+			flex-wrap: wrap;
+		}
+		
+	}
+
+}

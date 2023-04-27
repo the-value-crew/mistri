@@ -1,0 +1,108 @@
+.navbar.navbar-transparent {
+    background-color: #00bcd4;
+    box-shadow: none;
+    border-bottom: 0;
+    color: #ffffff;
+}
+
+
+.card{
+    border-radius: 15px;
+}
+
+
+.card [data-background-color] {
+     margin: 0px 0px ;
+    /* padding: 15px; */
+    background-color: #f8f8f8;
+    position: relative;
+    box-shadow: none;
+    border-bottom: 1px solid #C0C0C0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card .card-title {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.card [data-background-color] .card-title {
+    color: #696969;
+
+}
+
+.margin-style{
+    margin: 20px;
+
+}
+
+
+
+
+.error-message{
+    color: #D8000C;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+
+.img-style{
+    width: 6em !important;
+    height: 5em !important;
+}
+
+hr.service-category-hr{
+    border: 1px solid lightgrey;
+}
+
+.asdh-btn-small {
+    padding : 4px 8px;
+
+}
+
+.field-section {
+    color: #696969;
+    font-size: 13px;
+    font-weight: 900;
+    padding-right: 10px;
+    margin-left:20px;
+}
+
+.form-label{
+    color: #696969;
+    font-size: 12px;
+}
+
+.notification-style{
+    font-weight: 800;
+}
+
+.second-row .row{
+    margin-bottom: 15px;
+}
+
+.field-box{
+    background: #F9F9F9;
+    padding: 5px;
+
+}
+
+.field-name{
+    font-weight: 800;
+    color: #696969;
+}
+
+.field-row{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+

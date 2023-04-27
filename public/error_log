@@ -1,0 +1,1 @@
+[16-Aug-2021 18:31:59 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 163098064 bytes) in /home4/kabigrg/serviceonus.com/vendor/facade/ignition/src/Solutions/MakeViewVariableOptionalSolution.php on line 70

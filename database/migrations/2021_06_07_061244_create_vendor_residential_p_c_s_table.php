@@ -1,0 +1,42 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateVendorResidentialPCSTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('vendor_residential_p_c', function (Blueprint $table) {
+            $table->id();
+            $table->string('home_type',10);
+            $table->unsignedBigInteger('vendor_id');
+            $table->unsignedBigInteger('treatment_type_id');
+            $table->decimal('1bhk',9,2);
+            $table->decimal('2bhk',9,2);
+            $table->decimal('3bhk',9,2);
+            $table->decimal('4bhk',9,2);
+            $table->decimal('5bhk',9,2);
+            $table->string('other','20');
+            $table->timestamps();
+            $table->foreign('treatment_type_id')->references('id')->on('pest_control_treatment_types')->onDelete('cascade');
+            $table->foreign('vendor_id')->references('id')->on('users')->onDelete('cascade');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('vendor_residential_p_c_s');
+    }
+}

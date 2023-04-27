@@ -1,0 +1,776 @@
+@import 'style.scss';
+.common-page{
+	.title--category{
+		display: flex;
+		margin-left: 0;
+		margin-bottom: 20px;
+		font-weight: normal;
+		@include responsivesm{
+			padding-bottom: 10px;
+		}
+		.title--section{
+			margin-bottom: 0;
+		}
+		.title--description{
+			font-size: 1em;
+			color: #aeaeae;
+		}
+		img{
+			height: 70px;
+			width: auto;
+			object-fit: contain;
+			@include responsivesm{
+				height: 55px;
+			}
+		}
+
+		.body{
+			margin-left: 1em;
+			.title--section{
+				font-size: 2em;
+				height: auto !important;
+				font-weight: normal;
+				@include responsivesm{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.screen{
+		margin-bottom: 40px;
+		padding: 30px;
+		background-color:#fff ;
+		border-radius:20px;
+		@include responsivesm{
+			margin-bottom: 0;
+			padding: 15px;
+		}
+		.title--section {
+			color: #575757;
+		}
+		.title--description{
+			color: #7e7e7e;
+		}
+		.wrapper{
+			position:static;
+			transform: none;
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+	.accordion{
+		width: 100%;
+	}
+	/* make the native arrow invisible and stretch it over the whole field so you can click anywhere in the input field to trigger the native datepicker*/
+	input[type="date"]::-webkit-calendar-picker-indicator {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: auto;
+		height: auto;
+		color: transparent;
+		background: transparent;
+	}
+
+	/* adjust increase/decrease button */
+	input[type="date"]::-webkit-inner-spin-button {
+		z-index: 1;
+	}
+	/* adjust clear button */
+	input[type="date"]::-webkit-clear-button {
+		z-index: 1;
+	}
+	.page__title{
+		background-color: $white;
+		// padding-top: 40px;
+		// padding-bottom: 30px;
+		// margin-bottom: -2.5em;
+		// text-align: left;
+
+		@include responsivesm{
+			padding-top: 25px;
+			padding-bottom: 50px;
+		}
+		.title--section{
+			color: $dark;
+			font-size: 26px;
+		}
+	}
+	.service--title{
+		margin-top: -40px;
+	}
+}
+
+.page--category{
+	.title--category{
+		width:100% !important;
+		padding: 0 !important;
+		// justify-content: center;
+		// text-align: center;
+
+
+	}
+	
+	.service--wrapper{
+		border-radius:12px;
+		box-shadow: rgba(120, 120, 120, 0.1) 0px 8px 24px;
+		position: relative;
+		background-color:#fff;
+		padding: 30px;
+		margin-bottom: 60px;
+		@include responsivesm{
+			padding: 20px 0px;
+			margin-bottom: 20px;
+		}
+		&> .row{
+			justify-content: center;
+		}
+	}
+	
+	.section-rule{
+		width: 90%;
+	}
+	
+
+}
+
+// form-page
+.page--form{
+	
+	.form-group {
+		margin-bottom: 2rem;
+	}
+	label{
+		cursor: pointer;
+	}
+	button{
+		@include button;
+	}
+	.custom-select, .form-control{
+		height: 50px;
+		box-shadow: none;
+		@include responsivesm{
+			height: 40px;
+		}
+	}
+	form{
+		padding: 2em;
+	}
+
+	.button--wrapper{
+		display: flex;justify-content: flex-end;
+		button{
+			margin: 0;
+			margin-left: 20px;
+		}
+	}
+	.step{
+		width:100% !important;
+		&:not(.active){
+			display: none;
+		}
+
+	}
+	.card--wrapper{
+		margin-bottom: 2em;
+		.card__title{
+			@include card-title;
+		}
+		&:not(:nth-last-child(2)){
+			border-bottom: 2px dashed #f2f2f2;
+			padding-bottom: 2em;
+		}
+	}
+	.button__prev{
+		background-color: transparent;
+		color: #444;
+		border: 1px solid #444;
+	}
+	.aside__sticky{
+		position: sticky;
+		top: 170px;
+	}
+
+	.checkout--wrapper{
+		@include box-shadow;
+		z-index: 2;
+		padding: 2em;
+		.title--description{
+			display: block;
+			margin-bottom: 1em;
+		}
+		ul{
+			padding-left: 1em;
+		}
+		button{
+			width: 100%;
+			background-color: $primary-color;
+			text-align: center;
+			display: block;
+		}
+		@include responsivesm{
+			position: static;
+			font-size: 14px;
+		}
+	}
+	button[disabled]{
+		border-color: rgba($primary-color,.7);
+		background-color: rgba($primary-color,.7);
+		cursor: no-drop;
+	}
+	
+	aside{
+		@include responsivemd{
+			padding: 0;
+		}
+	}
+
+	.checkbox--wrapper{
+		column-count: 3;
+	}
+	.plan{
+		.select--button{
+			width: 100%;
+			margin: 1.5em !important;
+			background:#fff;
+			color: $dark;
+			border-color:$dark !important;
+			// height: 50px;
+		}
+		.custom-checkbox{
+			padding-left: 0;
+			margin: 8px 0;
+			input{
+				&:checked{
+					& + label{
+						background-color: $secondary-color;
+						color: #fff;
+						&:before{
+							border-color:#fff;
+						}
+						*{
+							color: #fff;
+						}
+					}
+				}
+			}
+			label{
+				// @include box-shadow;
+				border:1px solid #e4e4e4;
+				padding: 1.5em;
+				@include border-radius;
+				width: 100%;
+				text-align: center;
+				&:before, &:after{
+					// content: none;
+					top: 1.6rem;
+					left: 1.5rem;
+					height: 24px;
+					width: 24px;
+				}
+				&:before{
+					border-color:#e4e4e4;
+				}
+				@include transition-in;
+				&:hover{
+					@include box-shadow;
+				}
+				.card__title{
+					height: auto;
+					margin-bottom: 10px;
+				}
+			}
+		}
+		.price{
+			color: $secondary-color;
+			font-size: 25px;
+			font-weight: 600;
+			margin-bottom: 8px;
+		}
+	} 
+}
+.modal{
+
+	.checkout--wrapper{
+		padding: 2em;
+		.title--description{
+			display: block;
+			margin-bottom: 1em;
+		}
+		ul{
+			margin-top: 1em;
+			padding-left: 1em;
+			line-height: 2;
+		}
+		@include responsivesm{
+			position: static;
+			font-size: 14px;
+		}
+	}
+	.modal-header{
+		padding: 0;
+	}
+}
+.progressive--wrapper{
+	position: relative;
+	padding: 40px 0;
+	position: sticky;
+	top: 0px;
+	background-color: #fff;
+	z-index: 9;
+	// box-shadow: 0 12px 10px rgba(0, 0, 0, 0.02);
+	margin-bottom: 50px;
+	@include border-bottom;
+	@include responsivemd{
+		top:65px;
+		margin-bottom: 0;
+	}
+	@include responsivesm{
+		top: 0px;
+		z-index: 99;
+	}
+	.section-rule{
+		position: relative;
+	}
+	.progress-bar{
+		background-color: $secondary-color !important;
+	}
+	progress{
+		z-index: 1;
+		position: relative;
+	}
+	.label{
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		right: 0;
+		z-index: 9;
+		@include responsivesm{
+			@include scrollbar;
+		}
+		span{
+			background-color: #f9f9f9;
+			padding: 7px 12px;
+			font-size: 13px;
+			color: #a8a8a8;
+			border-radius: 6px;
+			&.active{
+				background-color: $secondary-color;
+				color:#fff ;
+
+			}
+			white-space: nowrap;
+			margin-right: 2em;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.page--login{
+	@extend .page--form;
+	input{
+		display: block;
+	}
+	.fg--password {
+		float: right;
+	}
+	button[type=submit]{
+		width: 50%;
+		text-align: center;
+		justify-content: center;
+		margin: 0px 0 1.5em;
+	}
+	.comments--collection{
+		position: static;
+		transform: none !important;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	.account{
+		a{
+			color: $primary-color;
+		}
+	}
+}
+
+.page--aboutus{
+	.screen{
+		// margin-bottom: 0 !important;
+		padding: 0 !important;
+		border-radius: 0 !important;
+		@include responsivemmd{
+			padding:0;
+			margin: 1em 0;
+		}
+		img{
+			transform: 0 !important;
+			position: static;
+			bottom: 10%;
+			z-index: 0;
+			@include image;
+			@include responsivesm{
+				border-radius: 10px;
+			}
+		}
+		.wrapper{
+			padding: 3em;
+			text-align: left;
+			background-color:#fff;
+			padding-left: 0;
+			@include responsivesm{
+				font-size: 14px;
+				margin-bottom: 18px;
+				border-radius: 10px;
+				padding: 20px;	
+			}
+		}
+		
+		.paragraph{
+			@include paragraph;
+			font-size: 1em;
+			font-weight: lighter;
+		}
+	}
+	.title--wrapper {
+		text-align: left;
+	}
+	.comments--collection{
+		position: static;
+		transform: none !important;
+		.title--description{
+			width: 90%;
+			padding: 2em 2em;
+			@include responsivesm{
+				padding: 1.5em;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.page-contact-us{
+	.section-rule{
+		box-shadow: none !important;
+	}
+	.screen{
+		img{
+			transform: none !important;
+		}
+	}
+
+	.logo img{
+		height: 4rem !important;
+		width: auto;
+	}
+
+	ul{
+		@include ul;
+		li{
+			margin:1.2em 0;
+			.material-icons{
+				font-size: 20px;
+				margin-right: 8px;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.social{
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 22px;
+		margin-top: 1.3rem;
+		li{
+			margin:0 8px ;
+			
+		}
+		li:first-child{
+			margin-left: 0;
+		}
+		li:last-child{
+			margin-right: 0;
+		}
+		img{
+			height: 40px;
+			width: auto;
+			object-fit: contain;
+		}
+	}
+	
+	.info{
+		background-color: #f9f9f9;
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		justify-content: flex-start;
+		box-shadow: none !important;
+	}
+
+	.brand{
+		background-color: transparent;
+	}
+	form{
+		button[type="submit"]{
+			@include button;
+		}
+	}
+}
+
+.page--works{
+	background-color: #fff3d9;
+	& + footer{
+		background-color: #fff;
+	}
+}
+
+.page--faq{
+	.screen{
+		.accordion {
+			.card{
+				margin-bottom: 1em;
+				border: 0;
+				border-radius: 0;
+				.card-header{
+					background-color: #fff;
+					margin-bottom: 1em;
+					border: 1px solid #aeaeae;
+					border-radius: 0;
+					position: relative;
+					@include card-title;
+					height: auto !important;
+					font-weight: lighter;
+
+					a{
+						display: block;
+						span{
+							float: right;
+						}
+
+					}
+				}
+				.card-body{
+					background-color: #fff;
+					border: 1px solid #aeaeae;
+					border-top:0;
+					@include paragraph;
+					font-size: #666;
+					font-size: 1em;
+
+				}
+
+			}	
+		}
+		@include responsivesm{
+			margin-top: 0;	
+		}
+		.wrapper{
+			width: 100%;
+
+		}
+	}
+}
+
+.page--provider{
+	.screen{
+		.title--description{
+			font-size: 1em;
+		}
+	}
+	.form{
+		.title--section{
+			font-size: 25px;
+		}
+		.card__title{
+			font-size: 20px;
+			margin-bottom: 2rem;
+		}
+		form{
+			padding: 0;
+			margin-top: 3rem;
+		}
+	}
+	.form-row > .col, .form-row > [class*="col-"] {
+		padding-right: 12px;
+		padding-left: 12px;
+	}
+	.form-row{
+		margin-bottom: 3rem;
+	}
+	.wrapper{
+		position: relative;
+		.form-check-label{
+			padding: 2em 5rem 2rem 2rem ;
+			@include box-shadow;
+			@include transition-in;
+		}
+		.form-check-input{
+			position: absolute;
+			margin: 0;
+			&:checked + .form-check-label{
+				background-color: $primary-color;
+				color:$white;
+				@include transition-out;
+
+			}
+		}
+	}
+	textarea.form-control{
+		height: 120px;
+	}
+	button{
+		@include button;
+		width: 100%;
+	}
+}
+
+.empty{
+
+	.material-icons{
+		font-size: 5rem;
+		opacity: .1;
+	}
+	.title--description{
+		line-height: 2;
+		color: #6f6f6f;
+	}
+}
+// account page
+.account-page{
+	.sticky{
+		position:sticky;
+		top:100px;
+	}
+	.list-group{
+		border-radius: 0;
+		border-left:1px solid #f1f1f1;
+		.material-icons{
+			vertical-align: bottom;
+			opacity: 0.75;
+			margin-right: 8px;
+		}
+		.nav-link{
+			padding: 1rem 2rem;
+			&.active{
+				color: $secondary-color;
+				border-left: 4px solid $secondary-color;
+			}
+			&.log-out{
+				color: #DA5757;
+			}
+		}
+	}
+	.service{
+		.card{
+			text-align: left;
+			background-color:transparent !important;
+			@include box-shadow;
+		}
+		button{
+			display: inline-block;
+			width: auto ;
+			background-color: $secondary-color;
+			&:hover{
+				background-color: $primary-color;
+			}
+		}
+	}
+	.checkout--wrapper{
+		position: relative;
+		top:0;
+	}
+	
+
+	#regForm{
+		img{
+			@include image;
+		}
+		.card__img{
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin-bottom: 2em;
+		}
+	}
+
+	.status {
+		color: #fff;
+		border-radius: 25px;
+		padding: 7px 12px;
+		white-space: nowrap;
+	}
+	.checkout--wrapper:not(:last-child){
+		margin-bottom: 2em;
+	}
+
+	.card-tab{
+
+		.card__wrapper{
+			background-color: $primary-color;
+			color: #fff;
+			padding: 1.8em;
+			border-radius: 10px;
+			margin-bottom: 1em;
+			border-left: 10px solid rgba(24, 177, 202, 0.63);
+			background-image: url('../gallery/Vorderrhein.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: right;
+			background-blend-mode: soft-light;
+		}
+		p{
+			margin: 0;
+		}
+		.small__title {
+			color: #fff;
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		.card__num{
+			margin: 10px 0;
+			font-size: 30px;
+		}
+		time{
+			font-size: 30px;
+		}
+		form{
+			padding: 0;
+			button{
+				margin: 0;
+			}
+			.form-control:invalid {
+				border-color: $red !important;
+			}
+		}
+	}
+	.invite{
+		.card__title{
+			font-size: 26px;
+		}
+		.code{
+			a{
+				background-color: #f9f9f9;
+				padding: 1em 20px;
+				@include transition-in;
+				margin-left: 1em;
+				display: inline-block;
+
+				&:active{
+					transform: scale(1.3);
+					background-color: red;
+				}
+			}
+		}
+	}
+}

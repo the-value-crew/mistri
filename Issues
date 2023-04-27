@@ -1,0 +1,29 @@
+1. In case of suggest vendor , if Admin did not suggest vendor then that order  will not be shown
+    to customer .
+
+
+
+    Admin/ServiceController
+     public function serviceByCategory($id ,$slug)
+        {
+            $this->data['parent_categories'] = ServiceCategory::where('parent_id',null)->get();
+            $this->data['cat']=ServiceCategory::find($id);
+            $this->data['categories'] = ServiceCategory::where('parent_id',$id)->get();
+    //        $this->data['services'] = Service::latest()->get();
+
+            $categories = ServiceCategory::where('parent_id',$id)->get();
+            $services = [];
+
+            while(count($categories) > 0){
+                $nextCategories = [];
+                foreach ($categories as $category) {
+                    $services = array_merge($services, $category->services->all());
+                    $nextCategories = array_merge($nextCategories, $category->children->all());
+                }
+                $categories = $nextCategories;
+            }
+
+            return $services;
+
+            return view('admin.service.service_by_category',$this->data,compact('services'));
+        }

@@ -1,0 +1,8 @@
+
+User-agent: *
+Disallow: /blog
+User-agent: Bingbot
+User-agent: Googlebot
+User-agent: Slurp
+Disallow:
+Sitemap: https://gggservices.com/blog/sitemap.xml
