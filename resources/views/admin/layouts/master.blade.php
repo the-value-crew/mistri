@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="{{asset('dashboard/img/apple-icon.png')}}" />
-    <link rel="icon" type="image/png" href="{{asset('dashboard/img/favicon.png')}}" />
+    <link rel="icon" href="{{ asset(`http://127.0.0.1:8000/dashboard/img/1671682656Screen Shot 2022-12-22 at 10.02.21.png`) }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">

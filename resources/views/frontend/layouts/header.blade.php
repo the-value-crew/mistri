@@ -92,12 +92,7 @@
                             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
                             integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
                             crossorigin="anonymous" referrerpolicy="no-referrer" />
-                        <div class="header_social_icons_wrapper col-md-1">
-                            <div class="social_container whatsapp_container"
-                                onclick="window.open('https://wa.me/971507575789', '_blank');">
-                                <i class="fa fa-whatsapp"></i>
-                            </div>
-                        </div>
+                        
                     </li>
                 @endauth
 

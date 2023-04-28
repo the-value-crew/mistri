@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0e3c85">
-    <link rel="icon" href="{{asset('gallery/Logo-Option-fav.png')}}">
+    <link rel="icon" href="{{ asset(`http://127.0.0.1:8000/dashboard/img/1671682656Screen Shot 2022-12-22 at 10.02.21.png`) }}">
     <title>@yield('title')</title>
 
     <!-- materailizeicon -->
@@ -48,7 +48,7 @@
 <body>
 
 
-@include('frontend.layouts.ggg-header')
+{{-- @include('frontend.layouts.ggg-header') --}}
 @include('frontend.layouts.header')
 
 

@@ -145,8 +145,8 @@
                                 <div class="input-group-prepend">
                                     <select class="custom-select" id="employeN">
                                         {{--<option selected="" value="">USA</option>--}}
-                                        <option value="+971">
-                                            +971
+                                        <option value="++977">
+                                            +977
                                         </option>
 
                                     </select>
