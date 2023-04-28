@@ -203,7 +203,7 @@
     }
 </style>
 <footer class="ggg-footer-wrapper">
-    <div class="footer-container">
+    {{-- <div class="footer-container">
         <div class="row">
             <div class="col-md-3 col-sm-6 col-6">
                 <h5 class="ggg-footer-title">About GGG</h5>
@@ -416,7 +416,7 @@
                         <a href="http://gggeats.com" target="_blank">GGG Eats</a>
                     </p>
                     <p>
-                        <a href="http://gggservices.com" target="_blank">GGG Services</a>
+                        <a href="http://mistri.com" target="_blank">GGG Services</a>
                     </p>
                     <p>
                         <a href="http://globalpurchasingsolution.com" target="_blank">Global Purchasing Solution</a>
@@ -593,7 +593,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="lower-footer">
         <div class="container">
@@ -646,13 +646,13 @@
             <div style="color: #e3dbdb; padding: 0px; text-align: center">
                 <strong>
                     Director:
-                    <a style="color:#e3dbdb" href="mailto:brad@gggservices.com">
-                        brad@gggservices.com </a>||
-                    <a style="color:#e3dbdb" href="mailto:sales@gggservices.com">
-                        sales@gggservices.com </a>
+                    <a style="color:#e3dbdb" href="mailto:brad@mistri.com">
+                        brad@mistri.com </a>||
+                    <a style="color:#e3dbdb" href="mailto:sales@mistri.com">
+                        sales@mistri.com </a>
                     ||
-                    <a style="color:#e3dbdb" href="mailto:support@gggservices.com">
-                        support@gggservices.com ||
+                    <a style="color:#e3dbdb" href="mailto:support@mistri.com">
+                        support@mistri.com ||
                     </a>
                 </strong>
             </div>
@@ -668,12 +668,8 @@
             <div class="copyright-footer">
                 Copyright 2023 ©
                 <strong>
-                    <a style="color:#e3dbdb" href="https://gggplatforms.com/"> GGGplatforms </a> ||
-                    <a style="color:#e3dbdb" href="https://gggtechlabs.com/"> GGGtechlabs </a>
-                    ||
-                    <a style="color:#e3dbdb" href="https://www.globalpurchasingsolution.com/">
-                        Globalpurchasingsolution LLC.
-                    </a></strong>
+                    <a style="color:#e3dbdb" href="https://gggplatforms.com/"> Mistri </a>
+                </strong>
             </div>
         </div>
     </div>

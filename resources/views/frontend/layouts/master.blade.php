@@ -54,9 +54,9 @@
 
     @yield('content')
 
-@include('frontend.layouts.footer')
-@include('frontend.layouts.gggfooter')
 
+@include('frontend.layouts.gggfooter')
+{{-- @include('frontend.layouts.footer') --}}
 
 
 <!--jquery  -->

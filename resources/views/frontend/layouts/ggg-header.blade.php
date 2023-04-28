@@ -13,7 +13,7 @@
                             </li>
                             <li>
                                 <div class="icon dripicons-message"></div><a
-                                    href="mailto:sales@gggplatforms.com">sales@gggplatforms.com</a>
+                                    href="mailto:sales@mistriplatforms.com">sales@mistri.com</a>
                             </li>
                         </ul>
                     </div>
