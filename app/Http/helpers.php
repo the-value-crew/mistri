@@ -5,7 +5,7 @@ use Illuminate\Support\Str;
 
 
 
-$CURRENCY = "AED";
+$CURRENCY = "NPR";
 
 function point_for_refer()
 {

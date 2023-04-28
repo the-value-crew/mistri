@@ -36,9 +36,9 @@
                                 @endphp
                                 <tr>
                                     <td style="text-align: left">{{$radio_with_charge_field->label_for_invoice}} - {{$data_radio->radio_options->option}}</td>
-                                    <td class="text-center">AED {{$data_value->charge}}</td>
+                                    <td class="text-center">NPR {{$data_value->charge}}</td>
                                     <td class="text-center">{{$data_radio->qty}}</td>
-                                    <td class="text-right">AED {{$data_value->charge*$data_radio->qty}}</td>
+                                    <td class="text-right">NPR {{$data_value->charge*$data_radio->qty}}</td>
                                 </tr>
                                 @php
                                     $total_radio = $total_radio + ($data_value->charge*$data_radio->qty);
@@ -56,9 +56,9 @@
                                 @endphp
                                 <tr>
                                     <td style="text-align: left">{{$select_with_charge_field->label_for_invoice}} - {{$data_select->select_options->option}}</td>
-                                    <td class="text-center">AED {{$data_value_select->charge}}</td>
+                                    <td class="text-center">NPR {{$data_value_select->charge}}</td>
                                     <td class="text-center">{{$data_select->qty}}</td>
-                                    <td class="text-right">AED {{$data_value_select->charge*$data_select->qty}}</td>
+                                    <td class="text-right">NPR {{$data_value_select->charge*$data_select->qty}}</td>
                                 </tr>
                                 @php
                                     $total_select = $total_select + ($data_value_select->charge*$data_select->qty);
@@ -77,9 +77,9 @@
                                 @endphp
                                 <tr>
                                     <td style="text-align: left">{{$select_with_charge_field->label_for_invoice}} - {{$data_select->select_options->option}}</td>
-                                    <td class="text-center">AED {{$data_value_select->charge}}</td>
+                                    <td class="text-center">NPR {{$data_value_select->charge}}</td>
                                     <td class="text-center">{{$data_select->qty}}</td>
-                                    <td class="text-right">AED {{$data_value_select->charge*$data_select->qty}}</td>
+                                    <td class="text-right">NPR {{$data_value_select->charge*$data_select->qty}}</td>
                                 </tr>
                                 @php
                                     $total_select = $total_select + ($data_value_select->charge*$data_select->qty);
@@ -94,7 +94,7 @@
                             <td class="no-line"></td>
                             <td class="no-line"></td>
                             <td class="no-line text-center"><strong>Total</strong></td>
-                            <td class="no-line text-right"><strong>AED {{$total_check+$total_select+$total_radio}}</strong></td>
+                            <td class="no-line text-right"><strong>NPR {{$total_check+$total_select+$total_radio}}</strong></td>
                         </tr>
                         </tbody>
                     </table>

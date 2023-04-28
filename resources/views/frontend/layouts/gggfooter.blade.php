@@ -646,25 +646,24 @@
             <div style="color: #e3dbdb; padding: 0px; text-align: center">
                 <strong>
                     Director:
-                    <a style="color:#e3dbdb" href="mailto:brad@mistri.com">
+                    {{-- <a style="color:#e3dbdb" href="mailto:brad@mistri.com">
                         brad@mistri.com </a>||
                     <a style="color:#e3dbdb" href="mailto:sales@mistri.com">
                         sales@mistri.com </a>
-                    ||
+                    || --}}
                     <a style="color:#e3dbdb" href="mailto:support@mistri.com">
-                        support@mistri.com ||
+                        support@mistri.com
                     </a>
                 </strong>
             </div>
-            <div style="color: #e3dbdb; padding: 0px; text-align: center">
+            {{-- <div style="color: #e3dbdb; padding: 0px; text-align: center">
                 <strong>
-                    Dubai
                     Direct: <a style="color:#e3dbdb" href="tel:+971567317092"> +971567317092 </a> ||
                     <i class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;&nbsp;
 
                     <a style="color:#e3dbdb" href="https://wa.me/971567317092">971567317092</a>
                 </strong>
-            </div>
+            </div> --}}
             <div class="copyright-footer">
                 Copyright 2023 ©
                 <strong>

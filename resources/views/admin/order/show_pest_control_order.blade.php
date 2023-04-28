@@ -101,7 +101,7 @@
                         <tr>
                             <td></td>
                             <td><b> Total </b></td>
-                            <td><b> AED : {{totalServiceCharge($order->id)}} </b></td>
+                            <td><b> NPR : {{totalServiceCharge($order->id)}} </b></td>
                         </tr>
 
 

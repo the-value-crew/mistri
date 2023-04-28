@@ -547,7 +547,7 @@
 
                                                         <tr>
                                                             <td>{{$option_with_charge->option}}</td>
-                                                            <td>{{$option_with_charge->charge}} AED</td>
+                                                            <td>{{$option_with_charge->charge}} NPR</td>
                                                         </tr>
 
                                                     </tbody>

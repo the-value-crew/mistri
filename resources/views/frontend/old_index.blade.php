@@ -294,9 +294,9 @@
             <div class="checkout--wrapper">
                 <h2 class="title--description">{{$service->name}}</h2>
                 <ul>
-                    <li id="checkField" style="display: none"><span id="checkLabel"></span> <br>Charge : AED <span id="checkValue"> </span></li>
+                    <li id="checkField" style="display: none"><span id="checkLabel"></span> <br>Charge : NPR <span id="checkValue"> </span></li>
                     <hr id="hrCheck" style="display: none;">
-                    <li id="radioField" style="display: none"><span id="radioLabel"></span> <br>Charge : AED <span id="radioValue"> </span></li>
+                    <li id="radioField" style="display: none"><span id="radioLabel"></span> <br>Charge : NPR <span id="radioValue"> </span></li>
                     <hr id="abc" style="display: none;">
                     <li id="selectWithNoPrice" style="display: none"><span id="check2Label"></span> : <span id="check2option"></span> </li>
                     <hr id="hrSelect" style="display: none;">

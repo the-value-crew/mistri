@@ -332,7 +332,7 @@
                 <h2 class="title--description">{{$service->name}}</h2>
                 <ul style="list-style: none">
                     <li id="service-provider-name"></li>
-                    <li id="checkField" style="display: none"><span id="checkLabel"></span> <br>Charge : AED <span id="checkValue"> </span></li>
+                    <li id="checkField" style="display: none"><span id="checkLabel"></span> <br>Charge : NPR <span id="checkValue"> </span></li>
                     <hr id="hrCheck" style="display: none;">
 
 

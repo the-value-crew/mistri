@@ -35,7 +35,7 @@
 
             </tbody>
         </table>
-            <p style="font-size: 10px;color: #DC143C;font-weight: bold">*{{$points_per_currency}} Points = 1 AED</p>
+            <p style="font-size: 10px;color: #DC143C;font-weight: bold">*{{$points_per_currency}} Points = 1 NPR</p>
         @endif
     </div>
     @if($count == 0)

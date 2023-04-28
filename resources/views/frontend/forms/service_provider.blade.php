@@ -20,7 +20,7 @@
                                     <input  class="custom-control-input normalCheckout" type="radio" name="provider_id" id="servicep0-{{$key}}" value="{{$provider->id}}" checked="false">
                                     <label for="servicep0-{{$key}}"  class="custom-control-label">
                                         <h2 class="card__title">{{$provider->name}}</h2>
-                                        <p class="price" style="font-size: 14px">Min Service Charge :AED {{minServiceCharge($service->id,$provider->id)}}</p>
+                                        <p class="price" style="font-size: 14px">Min Service Charge :NPR {{minServiceCharge($service->id,$provider->id)}}</p>
                                         <a href="#!" data-toggle="modal" data-target="#provider-{{$provider->id}}">Details</a>
                                     </label>
                                 </div>

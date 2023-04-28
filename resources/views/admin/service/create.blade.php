@@ -110,7 +110,7 @@
                                 </div>
 
                             <div class="form-group col-md-6">
-                                <label>Service Minimum Charge ( Price In AED )</label>
+                                <label>Service Minimum Charge ( Price In NPR )</label>
                                 <input type="text"  class="form-control" name="min_service_charge" id="title" value="{{$edit ? $service->min_service_charge :old('min_service_charge')}}">
                                 @if ($errors->has('min_service_charge'))
                                     <span class="error-message">

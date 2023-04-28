@@ -29,7 +29,7 @@
                                     <tr>
                                         <th>Name</th>
                                         <th>Slug</th>
-                                        <th>Price (AED)</th>
+                                        <th>Price (NPR)</th>
                                         <th style="width: 20%">Action</th>
 
 
@@ -39,7 +39,7 @@
                                     <tr>
                                         <th>Name</th>
                                         <th>Slug</th>
-                                        <th>Price (AED)</th>
+                                        <th>Price (NPR)</th>
                                         <th>Action</th>
 
 

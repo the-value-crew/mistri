@@ -62,7 +62,7 @@
 
 
                             <div class="form-group col-md-4">
-                                <label>Price (AED)</label>
+                                <label>Price (NPR)</label>
                                 <input type="text"  class="form-control" name="price"  value="{{$edit ? $plan->price :old('price')}}">
                                 @if ($errors->has('price'))
                                     <span class="error-message">
