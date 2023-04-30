@@ -135,7 +135,7 @@ class PaymentController extends CommonController
 
 //      $provider = User::find($request->provider_id);
 //      $provider->notify(new NewOrder($order,$user->name));
-      Mail::to($user->email)->send(new MailToCustomerAfterOrder('user',$user,$order));
+      // Mail::to($user->email)->send(new MailToCustomerAfterOrder('user',$user,$order));
 
         if($request->provider_id == "suggest_vendor" || $service->quotable_service == 1){
 
@@ -151,9 +151,9 @@ class PaymentController extends CommonController
                 }
 
                   $provider = User::find($request->provider_id);
-                  $provider->notify(new NewOrder($order,$user->name));
-                  Mail::to($user->email)->send(new MailToCustomerAfterOrder('user',$user,$order));
-                  Mail::to($order->vendor->email)->send(new MailToCustomerAfterOrder('admin',$user,$order));
+                //   $provider->notify(new NewOrder($order,$user->name));
+                //   Mail::to($user->email)->send(new MailToCustomerAfterOrder('user',$user,$order));
+                //   Mail::to($order->vendor->email)->send(new MailToCustomerAfterOrder('admin',$user,$order));
 
                   return back()->with('message',"Your order placed successfully");
 

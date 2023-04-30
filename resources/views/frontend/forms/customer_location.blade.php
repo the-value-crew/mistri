@@ -10,8 +10,8 @@
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <select class="custom-select" id="employeN" name="country_code">
-                        <option value="+971">
-                            DUB
+                        <option value="+977">
+                            NEP
                         </option>
                     </select>
                 </div>
