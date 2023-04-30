@@ -153,9 +153,9 @@ class ServiceProviderRegisterController extends Controller
        $detail->save();
 
       $s = Website::find(1);
-        Mail::to($s->email_2)->send(new MailToAdminAfterVendorRegister('admin',$user));
+        //Mail::to($s->email_2)->send(new MailToAdminAfterVendorRegister('admin',$user));
 //        Mail::to("kavita2aryal@gmail.com")->send(new MailToAdminAfterVendorRegister('admin',$user));
-        Mail::to($user->email)->send(new MailToAdminAfterVendorRegister('user',$user));
+       // Mail::to($user->email)->send(new MailToAdminAfterVendorRegister('user',$user));
 
 
 

@@ -106,7 +106,7 @@ RegisterController extends Controller
         $user_detail->user_id = $user->id;
         $user_detail->save();
 
-        Mail::to($user->email)->send(new MailToAdminAfterVendorRegister('user',$user));
+        //Mail::to($user->email)->send(new MailToAdminAfterVendorRegister('user',$user));
 
         return $user;
     }

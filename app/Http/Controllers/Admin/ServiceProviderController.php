@@ -109,7 +109,7 @@ class ServiceProviderController extends CommonController
         else{
             $user->status = 1;
             $user->email_token = $user->createToken('Access Token', ['*'])->accessToken;//this automatically gives the passport token
-            Mail::to($user->email)->send(new PasswordSetMail($user));
+            //Mail::to($user->email)->send(new PasswordSetMail($user));
             $user->save();
 
         }

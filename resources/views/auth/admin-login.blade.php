@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="{{ asset(`http://127.0.0.1:8000/dashboard/img/1671682656Screen Shot 2022-12-22 at 10.02.21.png`) }}">
+    <link rel="icon" href="{{ asset(`/dashboard/img/1671682656Screen Shot 2022-12-22 at 10.02.21.png`) }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Admin Login</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
