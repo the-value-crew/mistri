@@ -93,7 +93,7 @@
                         </div>
 
                         <div class="section-rule pt-0">
-                            <form action="{{route('telr.payment',$service->id)}}" id="validate_form" method="post">
+                            <form action="{{route('payment',$service->id)}}" id="validate_form" method="post">
                                 @csrf
                                 <div class="row">
                                     <aside class="col-lg-8 pl-0">
@@ -211,21 +211,13 @@
 
                                             <div class="checkout--wrapper">
                                                 <h2 class="title--description">Service Name : {{$service->name}}</h2>
-                                                {{--<ul>--}}
-                                                {{--<li><span>Premise :</span>2 Bed/Room Flat</li>--}}
-                                                {{--<li><span>From :</span> Abu Dhabi</li>--}}
-                                                {{--<li><span>To :</span> Sharjah </li>--}}
-                                                {{--<hr>--}}
-                                                {{--<li><span>Address :</span> Abu dhabi - Al Manhal </li>--}}
-                                                {{--<hr>--}}
-                                                {{--<li><span>Mode of transport :</span> Air Transportation </li>--}}
-                                                {{--<li class="price"><span>Price :</span> $1400-$2500 </li>--}}
-                                                {{--<li><span>Timing of Shipment :</span>United Arab Emirates</li>--}}
-                                                {{--</ul>--}}
-
-
-                                                {{--<button type="submit" class="checkout" disabled="">Proceed for terl payment</button> 31 March 2021 --}}
-                                                <button type="submit" id="orderSubmitButton" class="checkout" disabled="">@if($service->quotable_service == 1) Get Quotes @else <span id="checkout-text">Proceed For Telr payment</span>  @endif</button>
+                                                <button type="submit" id="orderSubmitButton" class="checkout" disabled="">
+                                                    @if($service->quotable_service == 1)
+                                                        Get Quotes 
+                                                    @else 
+                                                        <span id="checkout-text">Proceed <!--to payment --></span>  
+                                                    @endif
+                                                </button>
                                                 <br>
                                                 <small class="para text-danger" id="fill--form--text">*Fill the form before submitting </small>
                                             </div>

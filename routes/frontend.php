@@ -61,7 +61,7 @@ Route::get('login/facebook/callback', [App\Http\Controllers\Auth\LoginController
 // Telr integration
 
 Route::group(['namespace'=>'Frontend','middleware'=>['auth']],function(){
-    Route::post('telr-payment/{id}',[\App\Http\Controllers\Frontend\PaymentController::class,'place_order'])->name('telr.payment');
+    Route::post('telr-payment/{id}',[\App\Http\Controllers\Frontend\PaymentController::class,'place_order'])->name('payment');
 
     Route::get('/handle-payment/success',[\App\Http\Controllers\Frontend\PaymentController::class,"success"]);
     Route::get('/handle-payment/cancel',[\App\Http\Controllers\Frontend\PaymentController::class,"cancel"]);
