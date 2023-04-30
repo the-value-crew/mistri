@@ -99,7 +99,7 @@ class PaymentController extends CommonController
         $order->service_id = $id;
         if($request->provider_id == "suggest_vendor"){
             $order->suggest_vendor = 1;
-            $order->provider_id = 1;
+            $order->provider_id = null;
             $order->payment_info="Cash On Delivery";
             $order->status ="pending";
         }else{
