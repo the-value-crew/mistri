@@ -26,9 +26,9 @@
                                             <img src="{{asset('uploads/servicecategory/'.$service_category->image)}}" alt="">
                                         </div>
                                         <div class="card--body">
-                                            <div class="pp-image">
+                                            {{-- <div class="pp-image">
                                                 <img src="{{asset('uploads/servicecategory/'.$service_category->image)}}" alt="">
-                                            </div>
+                                            </div> --}}
                                             <div>
                                                 <p class="para">{{$service_category->name}}</p>
                                                 {{--<cite class="card--title text-muted">by Jhon</cite>--}}
@@ -46,9 +46,9 @@
                                         <img src="{{asset('uploads/service/'.$ser->image)}}" alt="">
                                     </div>
                                     <div class="card--body">
-                                        <div class="pp-image">
+                                        {{-- <div class="pp-image">
                                             <img src="{{asset('uploads/service/'.$ser->image)}}" alt="">
-                                        </div>
+                                        </div> --}}
                                         <div>
                                             <p class="para">{{$ser->name}}</p>
                                             {{--<cite class="card--title text-muted">by Jhon</cite>--}}
@@ -81,9 +81,9 @@
                                             <img src="{{asset('uploads/servicecategory/'.$child->image)}}" alt="">
                                         </div>
                                         <div class="card--body">
-                                            <div class="pp-image">
+                                            {{-- <div class="pp-image">
                                                 <img src="{{asset('uploads/servicecategory/'.$child->image)}}" alt="">
-                                            </div>
+                                            </div> --}}
                                             <div>
                                                 <p class="para">{{$child->name}} </p>
                                                 {{--<cite class="card--title text-muted">by Jhon</cite>--}}
@@ -100,9 +100,9 @@
                                             <img src="{{asset('uploads/service/'.$service1->image)}}" alt="">
                                         </div>
                                         <div class="card--body">
-                                            <div class="pp-image">
+                                            {{-- <div class="pp-image">
                                                 <img src="{{asset('uploads/service/'.$service1->image)}}" alt="">
-                                            </div>
+                                            </div> --}}
                                             <div>
                                                 <p class="para">{{$service1->name}} </p>
                                                 {{--<cite class="card--title text-muted">by Jhon</cite>--}}

@@ -28,6 +28,12 @@
     <link rel="stylesheet" href="{{asset('frontend/node_modules/bootstrap/dist/css/bootstrap-reboot.min.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/node_modules/bootstrap/dist/css/bootstrap.min.css')}}">
     <script type="text/javascript" src="{{asset('frontend/js/jquery.js')}}"></script>
+    <style>
+        /* :root {
+            --sitecolor-primary: '#fdc00f';
+            --sitecolor-secondary: '#040404';
+        } */
+    </style>
 
     <!-- style -->
 
@@ -37,8 +43,19 @@
         {{--<link rel="stylesheet" href="{{asset('frontend/css/otherstyle.css')}}">--}}
         <link rel="stylesheet" href="{{asset('frontend/css/otherpage.css')}}">
     @endif
+    
+    <style>
+        .nav-link:hover {
+            color: var(--site-primary)
+        }
 
-
+        .notification {
+            list-style: none;
+        }
+        .notification a:hover {
+            color: var(--site-primary)
+        }
+    </style>
 
     @stack('css')
 
@@ -55,7 +72,7 @@
     @yield('content')
 
 
-@include('frontend.layouts.gggfooter')
+@include('frontend.layouts.footer')
 {{-- @include('frontend.layouts.footer') --}}
 
 
