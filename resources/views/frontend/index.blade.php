@@ -3,18 +3,7 @@
 @push('css')
 <link rel="stylesheet" href="{{asset('frontend/node_modules/country/build/css/intlTelInput.css')}}">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
-<style>
-    footer{
-        background-color: #fff !important;
-    }
-
-
-
-</style>
 @endpush
-@section('title','SERVICEONUS')
-
-
 
 @section('content')
     <main class="home-page">
@@ -121,7 +110,7 @@
             </div>
         </section>
         @endif
-        <section class="popular--service popular--service--next">
+        <section class="popular--service popular--service--next" style="margin-bottom:60px">
             <div class="section-rule">
                 <div class="title--wrapper section--title__margin">
 
@@ -151,7 +140,7 @@
 
 
 
-        <section class="download ">
+        <section class="download">
             <div class="section-rule">
                 <div class="row no-gutters">
                     <aside class="col-sm-4 col-lg-6">

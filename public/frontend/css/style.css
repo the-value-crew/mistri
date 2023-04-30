@@ -1788,16 +1788,22 @@ article {
 
 .download {
   background-color: #f2f2f2;
+  position: relative;
+  height: 350px
 }
 .download .section-rule {
   border-radius: 12px;
-  box-shadow: #0000000a 0px 0 24px;
+  box-shadow: #00000050 0px 0 24px;
   padding: 60px;
-  margin-bottom: 30px;
-  margin-bottom: -3em;
+  /* margin-top: 30px; */
+  margin-top: -3em;
+  /* margin-bottom: 30px; */
+  margin-bottom: -2em;
   background-color: #fff;
   z-index: 3;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 @media only screen and (max-width: 836px) {
   .download .section-rule {
